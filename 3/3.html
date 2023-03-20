@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3</title>
+</head>
+<body onload="handle()">
+
+</body>
+<script>
+    let a = +prompt("nhập số thứ nhất vào đây")
+    let b = +prompt("nhập số thứ hai vào đây")
+
+    function handle(a, b) {
+        if (a > b) {
+            return `giá trị ${a} lớn hơn giá trị ${b}`
+        } else if (a <= b) {
+            return a + b
+        }
+    }
+    alert(handle(a, b))
+</script>
+</html>

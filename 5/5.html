@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+</head>
+<body onload="translateArr()">
+
+</body>
+<script>
+    let array1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let array2 = ["Ursa","Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa","Major","Leo"]
+    let input = prompt("tìm giá trị")
+    let result=translateArr(input)
+
+    function translateArr(input) {
+        for (let i = 0; i < array1.length; i++) {
+            if (input === array1[i]) {
+                for (let j = 0; j < array2.length; j++) {
+                    if (i === j) {
+                            return array2[i]
+                    }
+
+                }
+            }
+        }
+    }  alert(result)
+
+</script>
+</html>
